@@ -133,4 +133,5 @@ SELECT * FROM RecentOrders WHERE order_status = "shipped";
 SELECT ro.ProductId, ro.ProductTitle, COUNT(ro.ProductId) AS ProductCount
 FROM RecentOrders AS ro
 GROUP BY ro.ProductId
+ORDER BY ProductCount desc
 LIMIT 5;
