@@ -24,6 +24,7 @@ LEFT JOIN product p ON c.category_id = p.product_category_id
 GROUP BY c.category_name, c.category_id
 ORDER BY c.category_name ASC;
 
+-- Assignment 3
 -- Display Shopper’s information along with number of orders he/she placed during last 30 days.
 SELECT u.first_name AS First_Name , u.last_name AS Last_Name, u.mobile_number AS Mobile_number, COUNT(o.order_id) AS Order_Count
 FROM user u
